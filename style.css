@@ -1,0 +1,79 @@
+body {
+  background-image: linear-gradient(
+    -45deg,
+    #960914,
+    #fe9612,
+    #ffc99b,
+    #57b7b4,
+    #3c8d9d,
+    #065d80
+  );
+  color: #0000ff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 10vh;
+}
+#result {
+  width: 512px;
+  height: 512px;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+  margin: auto;
+  text-align: center;
+  line-height: 512px;
+  margin: 10px;
+}
+.result_image {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: center;
+}
+label {
+  margin: 10px;
+}
+textarea {
+  width: 512px;
+  height: 128px;
+  text-align: center;
+  background-color: transparent;
+}
+button {
+  background-color: #57b7b4;
+  width: 518px;
+  margin: 10px;
+  color: #0000ff;
+}
+.brush {
+  width: 20px;
+  height: auto;
+  background-color: transparent;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
